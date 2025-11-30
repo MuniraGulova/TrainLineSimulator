@@ -111,7 +111,8 @@ int main() {
     }
     for(auto &t: trains) t.join();{
         std::lock_guard<std::mutex> lg(coutMutex);
-        std::cout<<"\n ----> Simulation OFF,the end ^_^!   <---- \n";
+        std::cout<<"\n -----> Simulation OFF,the end ^_^!   <----- ";
     }
     return 0;
 }
+
